@@ -1,0 +1,9 @@
+name: hellow-world
+on: push
+jobs:
+  sayHello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: make say-hello
+
